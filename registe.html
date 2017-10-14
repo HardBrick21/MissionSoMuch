@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	 <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./dist/css/jumbotron.css" rel="stylesheet">
+
+    <script type="text/javascript" src="./dist/js/sub.js"></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="login.html">任务辣么多</a>
+        </div>
+
+      </div>
+    </nav>
+    <div class="jumbotron">
+
+      <div class="container">
+  			<h3 class="h3 lead text-center">注册</h3>
+        
+        <form action="register.php" method="post" onsubmit=' return cansub()'>
+          <div class="form-group">
+            <label for="missionName">手机号</label>
+            <input type="text" class="form-control" id="phoneNum" name="phonenum" placeholder="手机号" 
+             onblur='phonenumr()' required>
+           </div>
+          <div class="form-group">
+            <label for="missionContent">密码</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="密码" required>
+          </div>
+          <div class="form-group">
+            <label for="missionContent">确认密码</label>
+            <input type="password" class="form-control" id="password2" placeholder="密码"  
+            onblur='repassword()' required>
+          </div>
+          <div class="form-group">
+            <label for="Name">姓名</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="姓名" required>
+           </div>
+
+          <input type="submit" class="btn btn-warning" value="注册">
+          <input type="reset" class="btn btn-danger" value="重置">
+
+        </form>
+
+		</div>
+    </div>
+</body>
+</html>
